@@ -670,6 +670,17 @@
 					/usr/local/Cellar/libusb/1.0.24/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OTHER_CFLAGS = ("-mmmx",
+					"-msse",
+					"-msse2",
+					"-msse3",
+					"-mfpmath=sse",
+					"-mssse3",
+					"-ftree-vectorize",
+					"-fno-non-call-exceptions",
+					"-fno-builtin",
+					"-fno-asynchronous-unwind-tables",
+					"-O3",);
 				PRODUCT_BUNDLE_IDENTIFIER = "wtf.spinach.PSCAM-CMDAL";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -703,6 +714,17 @@
 					/usr/local/Cellar/libusb/1.0.24/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OTHER_CFLAGS = ("-mmmx",
+					"-msse",
+					"-msse2",
+					"-msse3",
+					"-mfpmath=sse",
+					"-mssse3",
+					"-ftree-vectorize",
+					"-fno-non-call-exceptions",
+					"-fno-builtin",
+					"-fno-asynchronous-unwind-tables",
+					"-O3",);
 				PRODUCT_BUNDLE_IDENTIFIER = "wtf.spinach.PSCAM-CMDAL";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

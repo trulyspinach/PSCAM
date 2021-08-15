@@ -203,7 +203,7 @@ class Stream: Object, UVCCameraDelegate {
  
         queueAlteredProc?(objectID, sampleBufferUnmanaged!.toOpaque(), queueAlteredRefCon)
         CMSimpleQueueEnqueue(queue, element: sampleBufferUnmanaged!.toOpaque())
-        queueAlteredProc?(objectID, sampleBufferUnmanaged!.toOpaque(), queueAlteredRefCon)
+//        queueAlteredProc?(objectID, sampleBufferUnmanaged!.toOpaque(), queueAlteredRefCon)
 
         sequenceNumber += 1
     }
