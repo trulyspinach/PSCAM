@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B51842B226BEC51F001222C6 /* UVCCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51842B126BEC51F001222C6 /* UVCCamera.swift */; };
+		B51842B526BED0E2001222C6 /* AVFoundationCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51842B426BED0E2001222C6 /* AVFoundationCamera.swift */; };
+		B51842B626BED0E2001222C6 /* AVFoundationCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51842B426BED0E2001222C6 /* AVFoundationCamera.swift */; };
+		B5235B2426B5AC7100E2DB88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5235B2326B5AC7100E2DB88 /* AppDelegate.swift */; };
+		B5235B2626B5AC7100E2DB88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5235B2526B5AC7100E2DB88 /* ViewController.swift */; };
+		B5235B2826B5AC7200E2DB88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5235B2726B5AC7200E2DB88 /* Assets.xcassets */; };
+		B5235B2B26B5AC7200E2DB88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5235B2926B5AC7200E2DB88 /* Main.storyboard */; };
+		B58B359126BC04BA003D4292 /* 702_B1BA24_68032.bin in Resources */ = {isa = PBXBuildFile; fileRef = B58B359026BC04BA003D4292 /* 702_B1BA24_68032.bin */; };
+		B58B359326BC0559003D4292 /* CamUSBBooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B359226BC0559003D4292 /* CamUSBBooter.swift */; };
+		B5B150DC26C561EA00CE4702 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B150DB26C561EA00CE4702 /* core.c */; };
+		B5B150DE26C561F400CE4702 /* descriptor.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B150DD26C561F400CE4702 /* descriptor.c */; };
+		B5B150E026C5620000CE4702 /* darwin_usb.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B150DF26C5620000CE4702 /* darwin_usb.c */; };
+		B5B150E326C5621C00CE4702 /* events_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B150E226C5621C00CE4702 /* events_posix.c */; };
+		B5B150E626C5622E00CE4702 /* hotplug.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B150E526C5622E00CE4702 /* hotplug.c */; };
+		B5B150E926C5623900CE4702 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B150E826C5623900CE4702 /* io.c */; };
+		B5B150EB26C5624600CE4702 /* strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B150EA26C5624600CE4702 /* strerror.c */; };
+		B5B150ED26C5624C00CE4702 /* sync.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B150EC26C5624C00CE4702 /* sync.c */; };
+		B5B150F226C5626B00CE4702 /* threads_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B150F126C5626B00CE4702 /* threads_posix.c */; };
+		B5B150F626C563DE00CE4702 /* darwin_usb.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B150DF26C5620000CE4702 /* darwin_usb.c */; };
+		B5B150F726C563E300CE4702 /* events_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B150E226C5621C00CE4702 /* events_posix.c */; };
+		B5B150F826C563E600CE4702 /* threads_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B150F126C5626B00CE4702 /* threads_posix.c */; };
+		B5B150F926C563EA00CE4702 /* descriptor.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B150DD26C561F400CE4702 /* descriptor.c */; };
+		B5B150FA26C563ED00CE4702 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B150DB26C561EA00CE4702 /* core.c */; };
+		B5B150FB26C563F000CE4702 /* hotplug.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B150E526C5622E00CE4702 /* hotplug.c */; };
+		B5B150FC26C563F400CE4702 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B150E826C5623900CE4702 /* io.c */; };
+		B5B150FD26C563F900CE4702 /* strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B150EA26C5624600CE4702 /* strerror.c */; };
+		B5B150FE26C563F900CE4702 /* sync.c in Sources */ = {isa = PBXBuildFile; fileRef = B5B150EC26C5624C00CE4702 /* sync.c */; };
+		B5B151E426C56B6E00CE4702 /* ctrl-gen.c in Sources */ = {isa = PBXBuildFile; fileRef = B5E440D726C2C8E7006BFE9A /* ctrl-gen.c */; };
+		B5E440DB26C2C8E7006BFE9A /* diag.c in Sources */ = {isa = PBXBuildFile; fileRef = B5E440CF26C2C8E7006BFE9A /* diag.c */; };
+		B5E440DE26C2C8E7006BFE9A /* frame.c in Sources */ = {isa = PBXBuildFile; fileRef = B5E440D226C2C8E7006BFE9A /* frame.c */; };
+		B5E440DF26C2C8E7006BFE9A /* stream.c in Sources */ = {isa = PBXBuildFile; fileRef = B5E440D326C2C8E7006BFE9A /* stream.c */; };
+		B5E440E026C2C8E7006BFE9A /* ctrl.c in Sources */ = {isa = PBXBuildFile; fileRef = B5E440D426C2C8E7006BFE9A /* ctrl.c */; };
+		B5E440E126C2C8E7006BFE9A /* device.c in Sources */ = {isa = PBXBuildFile; fileRef = B5E440D526C2C8E7006BFE9A /* device.c */; };
+		B5E440E226C2C8E7006BFE9A /* ctrl-gen.py in Resources */ = {isa = PBXBuildFile; fileRef = B5E440D626C2C8E7006BFE9A /* ctrl-gen.py */; };
+		B5E440E326C2C8E7006BFE9A /* ctrl-gen.c in Sources */ = {isa = PBXBuildFile; fileRef = B5E440D726C2C8E7006BFE9A /* ctrl-gen.c */; };
+		B5E440E426C2C8E7006BFE9A /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = B5E440D826C2C8E7006BFE9A /* init.c */; };
+		B5E440E526C2C8E7006BFE9A /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = B5E440D926C2C8E7006BFE9A /* misc.c */; };
+		B5E440F826C2DC46006BFE9A /* UVCCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51842B126BEC51F001222C6 /* UVCCamera.swift */; };
+		B5E440F926C2DCA1006BFE9A /* ctrl.c in Sources */ = {isa = PBXBuildFile; fileRef = B5E440D426C2C8E7006BFE9A /* ctrl.c */; };
+		B5E440FA26C2DCA1006BFE9A /* device.c in Sources */ = {isa = PBXBuildFile; fileRef = B5E440D526C2C8E7006BFE9A /* device.c */; };
+		B5E440FB26C2DCA1006BFE9A /* diag.c in Sources */ = {isa = PBXBuildFile; fileRef = B5E440CF26C2C8E7006BFE9A /* diag.c */; };
+		B5E440FD26C2DCA1006BFE9A /* frame.c in Sources */ = {isa = PBXBuildFile; fileRef = B5E440D226C2C8E7006BFE9A /* frame.c */; };
+		B5E440FE26C2DCA1006BFE9A /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = B5E440D826C2C8E7006BFE9A /* init.c */; };
+		B5E440FF26C2DCA1006BFE9A /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = B5E440D926C2C8E7006BFE9A /* misc.c */; };
+		B5E4410026C2DCA1006BFE9A /* stream.c in Sources */ = {isa = PBXBuildFile; fileRef = B5E440D326C2C8E7006BFE9A /* stream.c */; };
+		B5F11AFF26BD585000C1DD2A /* CoreMediaIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F11AFE26BD585000C1DD2A /* CoreMediaIO.framework */; };
+		B5F11B0D26BD589800C1DD2A /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F11B0226BD589800C1DD2A /* Property.swift */; };
+		B5F11B0E26BD589800C1DD2A /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F11B0326BD589800C1DD2A /* Main.swift */; };
+		B5F11B0F26BD589800C1DD2A /* CVPixelBuffer+SimpleDALPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F11B0426BD589800C1DD2A /* CVPixelBuffer+SimpleDALPlugin.swift */; };
+		B5F11B1026BD589800C1DD2A /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F11B0526BD589800C1DD2A /* Stream.swift */; };
+		B5F11B1226BD589800C1DD2A /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F11B0726BD589800C1DD2A /* Object.swift */; };
+		B5F11B1426BD589800C1DD2A /* PluginInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F11B0926BD589800C1DD2A /* PluginInterface.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B51842B126BEC51F001222C6 /* UVCCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVCCamera.swift; sourceTree = "<group>"; };
+		B51842B426BED0E2001222C6 /* AVFoundationCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVFoundationCamera.swift; sourceTree = "<group>"; };
+		B5235B2026B5AC7100E2DB88 /* PSCAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSCAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5235B2326B5AC7100E2DB88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5235B2526B5AC7100E2DB88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5235B2726B5AC7200E2DB88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5235B2A26B5AC7200E2DB88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5235B2C26B5AC7200E2DB88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5235B2D26B5AC7200E2DB88 /* PSCAM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PSCAM.entitlements; sourceTree = "<group>"; };
+		B53EA52126C379C1005D0D67 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = ../../../../usr/local/Cellar/jpeg/9d/lib/libjpeg.a; sourceTree = "<group>"; };
+		B53EA53C26C37A82005D0D67 /* libusb-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libusb-1.0.a"; path = "../../../../usr/local/Cellar/libusb/1.0.24/lib/libusb-1.0.a"; sourceTree = "<group>"; };
+		B56B98D026C8D9AF0024D084 /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		B56B98D126C8D9B80024D084 /* AUTHORS */ = {isa = PBXFileReference; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		B56B98D226C8D9D90024D084 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		B58B358E26BC0347003D4292 /* PSCAM-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PSCAM-Bridging-Header.h"; sourceTree = "<group>"; };
+		B58B359026BC04BA003D4292 /* 702_B1BA24_68032.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = 702_B1BA24_68032.bin; sourceTree = "<group>"; };
+		B58B359226BC0559003D4292 /* CamUSBBooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamUSBBooter.swift; sourceTree = "<group>"; };
+		B58B359526BC07E1003D4292 /* libusb-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libusb-1.0.0.dylib"; sourceTree = "<group>"; };
+		B5B150DB26C561EA00CE4702 /* core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = core.c; sourceTree = "<group>"; };
+		B5B150DD26C561F400CE4702 /* descriptor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = descriptor.c; sourceTree = "<group>"; };
+		B5B150DF26C5620000CE4702 /* darwin_usb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = darwin_usb.c; sourceTree = "<group>"; };
+		B5B150E126C5620400CE4702 /* darwin_usb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = darwin_usb.h; sourceTree = "<group>"; };
+		B5B150E226C5621C00CE4702 /* events_posix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = events_posix.c; sourceTree = "<group>"; };
+		B5B150E426C5621F00CE4702 /* events_posix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = events_posix.h; sourceTree = "<group>"; };
+		B5B150E526C5622E00CE4702 /* hotplug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hotplug.c; sourceTree = "<group>"; };
+		B5B150E726C5623300CE4702 /* hotplug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hotplug.h; sourceTree = "<group>"; };
+		B5B150E826C5623900CE4702 /* io.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = io.c; sourceTree = "<group>"; };
+		B5B150EA26C5624600CE4702 /* strerror.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strerror.c; sourceTree = "<group>"; };
+		B5B150EC26C5624C00CE4702 /* sync.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sync.c; sourceTree = "<group>"; };
+		B5B150EE26C5625300CE4702 /* version_nano.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = version_nano.h; sourceTree = "<group>"; };
+		B5B150EF26C5625300CE4702 /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		B5B150F026C5625E00CE4702 /* libusbi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libusbi.h; sourceTree = "<group>"; };
+		B5B150F126C5626B00CE4702 /* threads_posix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = threads_posix.c; sourceTree = "<group>"; };
+		B5B150F326C5626F00CE4702 /* threads_posix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = threads_posix.h; sourceTree = "<group>"; };
+		B5B150F426C5628B00CE4702 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		B5E440CF26C2C8E7006BFE9A /* diag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = diag.c; sourceTree = "<group>"; };
+		B5E440D226C2C8E7006BFE9A /* frame.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = frame.c; sourceTree = "<group>"; };
+		B5E440D326C2C8E7006BFE9A /* stream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stream.c; sourceTree = "<group>"; };
+		B5E440D426C2C8E7006BFE9A /* ctrl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ctrl.c; sourceTree = "<group>"; };
+		B5E440D526C2C8E7006BFE9A /* device.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = device.c; sourceTree = "<group>"; };
+		B5E440D626C2C8E7006BFE9A /* ctrl-gen.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "ctrl-gen.py"; sourceTree = "<group>"; };
+		B5E440D726C2C8E7006BFE9A /* ctrl-gen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "ctrl-gen.c"; sourceTree = "<group>"; };
+		B5E440D826C2C8E7006BFE9A /* init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = init.c; sourceTree = "<group>"; };
+		B5E440D926C2C8E7006BFE9A /* misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = misc.c; sourceTree = "<group>"; };
+		B5E440EE26C2C9A4006BFE9A /* utlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utlist.h; sourceTree = "<group>"; };
+		B5E440F026C2C9CD006BFE9A /* libuvc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libuvc.h; sourceTree = "<group>"; };
+		B5E440F126C2C9D2006BFE9A /* libuvc_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libuvc_config.h; sourceTree = "<group>"; };
+		B5E440F226C2C9D6006BFE9A /* libuvc_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libuvc_internal.h; sourceTree = "<group>"; };
+		B5E440F326C2C9FC006BFE9A /* libusb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libusb.h; sourceTree = "<group>"; };
+		B5F11AF726BD580D00C1DD2A /* PSCAMCMDAL.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSCAMCMDAL.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5F11AF926BD580D00C1DD2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F11AFE26BD585000C1DD2A /* CoreMediaIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMediaIO.framework; path = System/Library/Frameworks/CoreMediaIO.framework; sourceTree = SDKROOT; };
+		B5F11B0226BD589800C1DD2A /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		B5F11B0326BD589800C1DD2A /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		B5F11B0426BD589800C1DD2A /* CVPixelBuffer+SimpleDALPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+SimpleDALPlugin.swift"; sourceTree = "<group>"; };
+		B5F11B0526BD589800C1DD2A /* Stream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		B5F11B0726BD589800C1DD2A /* Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		B5F11B0926BD589800C1DD2A /* PluginInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginInterface.swift; sourceTree = "<group>"; };
+		B5F11B0B26BD589800C1DD2A /* PSCAM-CMDAL-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PSCAM-CMDAL-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5235B1D26B5AC7100E2DB88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F11AF426BD580D00C1DD2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F11AFF26BD585000C1DD2A /* CoreMediaIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B51842B026BEC4C0001222C6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B51842B126BEC51F001222C6 /* UVCCamera.swift */,
+				B51842B426BED0E2001222C6 /* AVFoundationCamera.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B5235B1726B5AC7100E2DB88 = {
+			isa = PBXGroup;
+			children = (
+				B5B150DA26C561D900CE4702 /* libusb */,
+				B5E440CE26C2C8D5006BFE9A /* libuvc */,
+				B58B359426BC07D9003D4292 /* bin */,
+				B58B358C26BC02D1003D4292 /* include */,
+				B51842B026BEC4C0001222C6 /* Common */,
+				B5235B2226B5AC7100E2DB88 /* PSCAM */,
+				B5F11AF826BD580D00C1DD2A /* PSCAM-CMDAL */,
+				B5235B2126B5AC7100E2DB88 /* Products */,
+				B5F11AFD26BD585000C1DD2A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5235B2126B5AC7100E2DB88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5235B2026B5AC7100E2DB88 /* PSCAM.app */,
+				B5F11AF726BD580D00C1DD2A /* PSCAMCMDAL.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5235B2226B5AC7100E2DB88 /* PSCAM */ = {
+			isa = PBXGroup;
+			children = (
+				B58B358F26BC047F003D4292 /* Booter */,
+				B5235B2326B5AC7100E2DB88 /* AppDelegate.swift */,
+				B5235B2526B5AC7100E2DB88 /* ViewController.swift */,
+				B5235B2726B5AC7200E2DB88 /* Assets.xcassets */,
+				B5235B2926B5AC7200E2DB88 /* Main.storyboard */,
+				B5235B2C26B5AC7200E2DB88 /* Info.plist */,
+				B5235B2D26B5AC7200E2DB88 /* PSCAM.entitlements */,
+			);
+			path = PSCAM;
+			sourceTree = "<group>";
+		};
+		B58B358C26BC02D1003D4292 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B5E440F326C2C9FC006BFE9A /* libusb.h */,
+				B5E440EF26C2C9AB006BFE9A /* libuvc */,
+				B5E440EE26C2C9A4006BFE9A /* utlist.h */,
+				B58B358E26BC0347003D4292 /* PSCAM-Bridging-Header.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B58B358F26BC047F003D4292 /* Booter */ = {
+			isa = PBXGroup;
+			children = (
+				B58B359026BC04BA003D4292 /* 702_B1BA24_68032.bin */,
+				B58B359226BC0559003D4292 /* CamUSBBooter.swift */,
+			);
+			path = Booter;
+			sourceTree = "<group>";
+		};
+		B58B359426BC07D9003D4292 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				B58B359526BC07E1003D4292 /* libusb-1.0.0.dylib */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		B5B150DA26C561D900CE4702 /* libusb */ = {
+			isa = PBXGroup;
+			children = (
+				B56B98D126C8D9B80024D084 /* AUTHORS */,
+				B56B98D026C8D9AF0024D084 /* COPYING */,
+				B5B150F526C562AA00CE4702 /* os */,
+				B5B150DD26C561F400CE4702 /* descriptor.c */,
+				B5B150DB26C561EA00CE4702 /* core.c */,
+				B5B150E526C5622E00CE4702 /* hotplug.c */,
+				B5B150E726C5623300CE4702 /* hotplug.h */,
+				B5B150E826C5623900CE4702 /* io.c */,
+				B5B150EA26C5624600CE4702 /* strerror.c */,
+				B5B150EC26C5624C00CE4702 /* sync.c */,
+				B5B150EE26C5625300CE4702 /* version_nano.h */,
+				B5B150EF26C5625300CE4702 /* version.h */,
+				B5B150F026C5625E00CE4702 /* libusbi.h */,
+				B5B150F426C5628B00CE4702 /* config.h */,
+			);
+			path = libusb;
+			sourceTree = "<group>";
+		};
+		B5B150F526C562AA00CE4702 /* os */ = {
+			isa = PBXGroup;
+			children = (
+				B5B150DF26C5620000CE4702 /* darwin_usb.c */,
+				B5B150E126C5620400CE4702 /* darwin_usb.h */,
+				B5B150E226C5621C00CE4702 /* events_posix.c */,
+				B5B150E426C5621F00CE4702 /* events_posix.h */,
+				B5B150F126C5626B00CE4702 /* threads_posix.c */,
+				B5B150F326C5626F00CE4702 /* threads_posix.h */,
+			);
+			path = os;
+			sourceTree = "<group>";
+		};
+		B5E440CE26C2C8D5006BFE9A /* libuvc */ = {
+			isa = PBXGroup;
+			children = (
+				B56B98D226C8D9D90024D084 /* LICENSE.txt */,
+				B5E440D726C2C8E7006BFE9A /* ctrl-gen.c */,
+				B5E440D626C2C8E7006BFE9A /* ctrl-gen.py */,
+				B5E440D426C2C8E7006BFE9A /* ctrl.c */,
+				B5E440D526C2C8E7006BFE9A /* device.c */,
+				B5E440CF26C2C8E7006BFE9A /* diag.c */,
+				B5E440D226C2C8E7006BFE9A /* frame.c */,
+				B5E440D826C2C8E7006BFE9A /* init.c */,
+				B5E440D926C2C8E7006BFE9A /* misc.c */,
+				B5E440D326C2C8E7006BFE9A /* stream.c */,
+			);
+			path = libuvc;
+			sourceTree = "<group>";
+		};
+		B5E440EF26C2C9AB006BFE9A /* libuvc */ = {
+			isa = PBXGroup;
+			children = (
+				B5E440F226C2C9D6006BFE9A /* libuvc_internal.h */,
+				B5E440F126C2C9D2006BFE9A /* libuvc_config.h */,
+				B5E440F026C2C9CD006BFE9A /* libuvc.h */,
+			);
+			path = libuvc;
+			sourceTree = "<group>";
+		};
+		B5F11AF826BD580D00C1DD2A /* PSCAM-CMDAL */ = {
+			isa = PBXGroup;
+			children = (
+				B5F11AF926BD580D00C1DD2A /* Info.plist */,
+				B5F11B0426BD589800C1DD2A /* CVPixelBuffer+SimpleDALPlugin.swift */,
+				B5F11B0B26BD589800C1DD2A /* PSCAM-CMDAL-Bridging-Header.h */,
+				B5F11B0326BD589800C1DD2A /* Main.swift */,
+				B5F11B0726BD589800C1DD2A /* Object.swift */,
+				B5F11B0926BD589800C1DD2A /* PluginInterface.swift */,
+				B5F11B0226BD589800C1DD2A /* Property.swift */,
+				B5F11B0526BD589800C1DD2A /* Stream.swift */,
+			);
+			path = "PSCAM-CMDAL";
+			sourceTree = "<group>";
+		};
+		B5F11AFD26BD585000C1DD2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B53EA53C26C37A82005D0D67 /* libusb-1.0.a */,
+				B53EA52126C379C1005D0D67 /* libjpeg.a */,
+				B5F11AFE26BD585000C1DD2A /* CoreMediaIO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5235B1F26B5AC7100E2DB88 /* PSCAM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5235B3026B5AC7200E2DB88 /* Build configuration list for PBXNativeTarget "PSCAM" */;
+			buildPhases = (
+				B5235B1C26B5AC7100E2DB88 /* Sources */,
+				B5235B1D26B5AC7100E2DB88 /* Frameworks */,
+				B5235B1E26B5AC7100E2DB88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PSCAM;
+			productName = PSCAM;
+			productReference = B5235B2026B5AC7100E2DB88 /* PSCAM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5F11AF626BD580D00C1DD2A /* PSCAMCMDAL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5F11AFC26BD580D00C1DD2A /* Build configuration list for PBXNativeTarget "PSCAMCMDAL" */;
+			buildPhases = (
+				B5F11AF326BD580D00C1DD2A /* Sources */,
+				B5F11AF426BD580D00C1DD2A /* Frameworks */,
+				B5F11AF526BD580D00C1DD2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PSCAMCMDAL;
+			productName = "PSCAM-CMDAL";
+			productReference = B5F11AF726BD580D00C1DD2A /* PSCAMCMDAL.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5235B1826B5AC7100E2DB88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B5235B1F26B5AC7100E2DB88 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					B5F11AF626BD580D00C1DD2A = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = B5235B1B26B5AC7100E2DB88 /* Build configuration list for PBXProject "PSCAM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5235B1726B5AC7100E2DB88;
+			productRefGroup = B5235B2126B5AC7100E2DB88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5235B1F26B5AC7100E2DB88 /* PSCAM */,
+				B5F11AF626BD580D00C1DD2A /* PSCAMCMDAL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5235B1E26B5AC7100E2DB88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B58B359126BC04BA003D4292 /* 702_B1BA24_68032.bin in Resources */,
+				B5E440E226C2C8E7006BFE9A /* ctrl-gen.py in Resources */,
+				B5235B2826B5AC7200E2DB88 /* Assets.xcassets in Resources */,
+				B5235B2B26B5AC7200E2DB88 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F11AF526BD580D00C1DD2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5235B1C26B5AC7100E2DB88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B150E326C5621C00CE4702 /* events_posix.c in Sources */,
+				B5E440E526C2C8E7006BFE9A /* misc.c in Sources */,
+				B5E440E026C2C8E7006BFE9A /* ctrl.c in Sources */,
+				B58B359326BC0559003D4292 /* CamUSBBooter.swift in Sources */,
+				B5B150E926C5623900CE4702 /* io.c in Sources */,
+				B5B150ED26C5624C00CE4702 /* sync.c in Sources */,
+				B5B150E026C5620000CE4702 /* darwin_usb.c in Sources */,
+				B51842B226BEC51F001222C6 /* UVCCamera.swift in Sources */,
+				B5B150DC26C561EA00CE4702 /* core.c in Sources */,
+				B5E440DE26C2C8E7006BFE9A /* frame.c in Sources */,
+				B5E440E426C2C8E7006BFE9A /* init.c in Sources */,
+				B5E440DB26C2C8E7006BFE9A /* diag.c in Sources */,
+				B5235B2626B5AC7100E2DB88 /* ViewController.swift in Sources */,
+				B51842B526BED0E2001222C6 /* AVFoundationCamera.swift in Sources */,
+				B5E440E326C2C8E7006BFE9A /* ctrl-gen.c in Sources */,
+				B5B150DE26C561F400CE4702 /* descriptor.c in Sources */,
+				B5E440E126C2C8E7006BFE9A /* device.c in Sources */,
+				B5B150E626C5622E00CE4702 /* hotplug.c in Sources */,
+				B5B150F226C5626B00CE4702 /* threads_posix.c in Sources */,
+				B5235B2426B5AC7100E2DB88 /* AppDelegate.swift in Sources */,
+				B5E440DF26C2C8E7006BFE9A /* stream.c in Sources */,
+				B5B150EB26C5624600CE4702 /* strerror.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F11AF326BD580D00C1DD2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B151E426C56B6E00CE4702 /* ctrl-gen.c in Sources */,
+				B5B150FD26C563F900CE4702 /* strerror.c in Sources */,
+				B5B150FE26C563F900CE4702 /* sync.c in Sources */,
+				B5B150FC26C563F400CE4702 /* io.c in Sources */,
+				B5B150FB26C563F000CE4702 /* hotplug.c in Sources */,
+				B5B150FA26C563ED00CE4702 /* core.c in Sources */,
+				B5B150F926C563EA00CE4702 /* descriptor.c in Sources */,
+				B5B150F826C563E600CE4702 /* threads_posix.c in Sources */,
+				B5B150F726C563E300CE4702 /* events_posix.c in Sources */,
+				B5B150F626C563DE00CE4702 /* darwin_usb.c in Sources */,
+				B5E440F926C2DCA1006BFE9A /* ctrl.c in Sources */,
+				B5E440FA26C2DCA1006BFE9A /* device.c in Sources */,
+				B5E440FB26C2DCA1006BFE9A /* diag.c in Sources */,
+				B5E440FD26C2DCA1006BFE9A /* frame.c in Sources */,
+				B5E440FE26C2DCA1006BFE9A /* init.c in Sources */,
+				B5E440FF26C2DCA1006BFE9A /* misc.c in Sources */,
+				B5E4410026C2DCA1006BFE9A /* stream.c in Sources */,
+				B5E440F826C2DC46006BFE9A /* UVCCamera.swift in Sources */,
+				B5F11B1426BD589800C1DD2A /* PluginInterface.swift in Sources */,
+				B5F11B0F26BD589800C1DD2A /* CVPixelBuffer+SimpleDALPlugin.swift in Sources */,
+				B51842B626BED0E2001222C6 /* AVFoundationCamera.swift in Sources */,
+				B5F11B0E26BD589800C1DD2A /* Main.swift in Sources */,
+				B5F11B0D26BD589800C1DD2A /* Property.swift in Sources */,
+				B5F11B1226BD589800C1DD2A /* Object.swift in Sources */,
+				B5F11B1026BD589800C1DD2A /* Stream.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5235B2926B5AC7200E2DB88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5235B2A26B5AC7200E2DB88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5235B2E26B5AC7200E2DB88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5235B2F26B5AC7200E2DB88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B5235B3126B5AC7200E2DB88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PSCAM/PSCAM.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BUN6AL6DWD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = PSCAM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/bin",
+					/usr/local/Cellar/jpeg/9d/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = wtf.spinach.PSCAM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Include/PSCAM-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B5235B3226B5AC7200E2DB88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PSCAM/PSCAM.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BUN6AL6DWD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = PSCAM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/bin",
+					/usr/local/Cellar/jpeg/9d/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = wtf.spinach.PSCAM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Include/PSCAM-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B5F11AFA26BD580D00C1DD2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BUN6AL6DWD;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = "PSCAM-CMDAL/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/jpeg/9d/lib,
+					"$(PROJECT_DIR)/bin",
+					/usr/local/Cellar/libusb/1.0.24/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "wtf.spinach.PSCAM-CMDAL";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PSCAM-CMDAL/PSCAM-CMDAL-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		B5F11AFB26BD580D00C1DD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BUN6AL6DWD;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = "PSCAM-CMDAL/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/jpeg/9d/lib,
+					"$(PROJECT_DIR)/bin",
+					/usr/local/Cellar/libusb/1.0.24/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "wtf.spinach.PSCAM-CMDAL";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PSCAM-CMDAL/PSCAM-CMDAL-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5235B1B26B5AC7100E2DB88 /* Build configuration list for PBXProject "PSCAM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5235B2E26B5AC7200E2DB88 /* Debug */,
+				B5235B2F26B5AC7200E2DB88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5235B3026B5AC7200E2DB88 /* Build configuration list for PBXNativeTarget "PSCAM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5235B3126B5AC7200E2DB88 /* Debug */,
+				B5235B3226B5AC7200E2DB88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5F11AFC26BD580D00C1DD2A /* Build configuration list for PBXNativeTarget "PSCAMCMDAL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F11AFA26BD580D00C1DD2A /* Debug */,
+				B5F11AFB26BD580D00C1DD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5235B1826B5AC7100E2DB88 /* Project object */;
+}

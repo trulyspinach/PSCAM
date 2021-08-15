@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7AB4994C-B6C1-41F4-AA4E-08856AF12EC7"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A92BEEAE-498B-45D8-9FBE-A350EC794A03"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "libuvc/frame.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "613"
+            endingLineNumber = "613"
+            landmarkName = "uvc_any2bgr(in, out)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C0A013B-C412-4EE0-B854-6867A3746C7B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Common/UVCCamera.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "handleNewFrame(frame:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5C0A013B-C412-4EE0-B854-6867A3746C7B - b7d0512b4a08e459"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PSCAM.UVCCamera.handleNewFrame(frame: Swift.UnsafeMutablePointer&lt;__C.uvc_frame&gt;) -&gt; ()"
+                  moduleName = "PSCAM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qihaoyan/Documents/PSCAM/Common/UVCCamera.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "758">
+               </Location>
+               <Location
+                  uuid = "5C0A013B-C412-4EE0-B854-6867A3746C7B - 8eaf6e6c87efe1fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.UnsafeMutableRawPointer&gt;, Swift.Optional&lt;Swift.UnsafeRawPointer&gt;) -&gt; () in PSCAM.UVCCamera.handleNewFrame(frame: Swift.UnsafeMutablePointer&lt;__C.uvc_frame&gt;) -&gt; ()"
+                  moduleName = "PSCAM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qihaoyan/Documents/PSCAM/Common/UVCCamera.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "82">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D6A6B2D3-02C9-45B6-ADD5-9581E8834C39"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "libuvc/frame.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "386"
+            endingLineNumber = "386"
+            landmarkName = "uvc_bgr2bgra(in, out)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "99D1FDA4-5199-4D3A-8DC1-148F3F728E11"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "libuvc/frame.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "274"
+            endingLineNumber = "274"
+            landmarkName = "uvc_yuyv2bgr_subset(in, out, sx, sy, width, height)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
