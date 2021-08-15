@@ -8,7 +8,7 @@ Playstation Camera Driver for macOS.
 
 ## How to use
 * You need a Mac, or Hackintosh, that have USB3 port avaliable. 
-* An AUX to USB adapter. Luckly you can get one from Sony for [free, if eligible](https://www.playstation.com/en-us/support/hardware/playstation-camera-adaptor/).
+* An AUX to USB adapter. Luckly you can get one from Sony for [free, if eligible](https://www.playstation.com/en-us/support/hardware/playstation-camera-adaptor/). The AUX connector are basically pin-swapped USB, it is possible just remap the wire.
 * Compile this from source code, then run PSCAM.app to boot up the camera.
 * Install PSCAMCMDAL.plugin to CoreMediaIO plugin folder.
 * Re-launch the CoreMedia application if necessary.
