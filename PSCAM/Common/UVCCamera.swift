@@ -26,6 +26,10 @@ class UVCCamera {
     
     var delegate: UVCCameraDelegate?
     
+    var canvasBuffer: CVPixelBuffer? = nil
+    
+    var cictx = CIContext()
+    
     init?() {
         uvc_init(&libuvcCtx, nil)
         
@@ -44,6 +48,15 @@ class UVCCamera {
         streamCtrl = stream
         uvc_print_stream_ctrl(&streamCtrl, nil)
         
+        let sur = IOSurfaceCreate([kIOSurfaceWidth:1280,
+                                   kIOSurfaceHeight:800,
+                                   kIOSurfaceBytesPerElement: 4,
+                                   kIOSurfacePixelFormat: kCVPixelFormatType_32BGRA] as CFDictionary)
+        
+        var pb: Unmanaged<CVPixelBuffer>? = nil
+        CVPixelBufferCreateWithIOSurface(kCFAllocatorDefault, sur!, nil, &pb)
+        canvasBuffer = pb!.takeRetainedValue()
+        
     }
     
     func handleNewFrame(frame: UnsafeMutablePointer<uvc_frame>) {
@@ -59,9 +72,17 @@ class UVCCamera {
             uvc_free_frame(frame?.bindMemory(to: uvc_frame_t.self, capacity: 1))
         }, bgra, nil, &pb)
         
+        let ciimg = CIImage(cvPixelBuffer: pb!)
+        let noiseRed = CIFilter(name: "CINoiseReduction")
+        noiseRed?.setDefaults()
+        noiseRed?.setValue(ciimg, forKey: kCIInputImageKey)
+        
+        cictx.render(noiseRed!.outputImage!, to: canvasBuffer!)
+        
         DispatchQueue.main.async {
-            self.delegate?.onFrameReady(pixelBuffer: pb!)
+            self.delegate?.onFrameReady(pixelBuffer: self.canvasBuffer!)
         }
+        
     }
     
     func startStreaming() {

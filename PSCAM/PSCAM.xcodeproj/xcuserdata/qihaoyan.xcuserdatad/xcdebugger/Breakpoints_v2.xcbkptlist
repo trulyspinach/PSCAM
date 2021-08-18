@@ -23,54 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5C0A013B-C412-4EE0-B854-6867A3746C7B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Common/UVCCamera.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "handleNewFrame(frame:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "5C0A013B-C412-4EE0-B854-6867A3746C7B - b7d0512b4a08e459"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PSCAM.UVCCamera.handleNewFrame(frame: Swift.UnsafeMutablePointer&lt;__C.uvc_frame&gt;) -&gt; ()"
-                  moduleName = "PSCAM"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/qihaoyan/Documents/PSCAM/Common/UVCCamera.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "61"
-                  endingLineNumber = "61"
-                  offsetFromSymbolStart = "758">
-               </Location>
-               <Location
-                  uuid = "5C0A013B-C412-4EE0-B854-6867A3746C7B - 8eaf6e6c87efe1fa"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.UnsafeMutableRawPointer&gt;, Swift.Optional&lt;Swift.UnsafeRawPointer&gt;) -&gt; () in PSCAM.UVCCamera.handleNewFrame(frame: Swift.UnsafeMutablePointer&lt;__C.uvc_frame&gt;) -&gt; ()"
-                  moduleName = "PSCAM"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/qihaoyan/Documents/PSCAM/Common/UVCCamera.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "82">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "D6A6B2D3-02C9-45B6-ADD5-9581E8834C39"
             shouldBeEnabled = "No"
             ignoreCount = "0"

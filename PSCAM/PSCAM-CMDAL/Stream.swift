@@ -20,6 +20,7 @@ class Stream: Object, UVCCameraDelegate {
     let frameRate = 60
     
     var cam: UVCCamera? = nil
+    var sema = DispatchSemaphore(value: 1)
     var sbb: CVPixelBuffer? = nil
     
     private var sequenceNumber: UInt64 = 0
@@ -119,7 +120,6 @@ class Stream: Object, UVCCameraDelegate {
     }
 
     private func createPixelBuffer() -> CVPixelBuffer? {
-        return sbb
         
         let pixelBuffer = CVPixelBuffer.create(size: CGSize(width: width, height: height))
         pixelBuffer?.modifyWithContext { [width, height] context in
@@ -138,7 +138,10 @@ class Stream: Object, UVCCameraDelegate {
 
     func onFrameReady(pixelBuffer: CVPixelBuffer) {
 //        print("lololol")
+        sema.wait()
+        
         sbb = pixelBuffer
+        sema.signal()
     }
     
     private func enqueueBuffer() {
@@ -151,12 +154,18 @@ class Stream: Object, UVCCameraDelegate {
             log("queue is full")
             return
         }
+        
+        sema.wait()
+        if cam == nil {sema.signal(); return}
 
-        guard let pixelBuffer = createPixelBuffer() else {
+        guard let pixelBuffer = sbb else {
             log("pixelBuffer is nil")
+            sema.signal()
             return
         }
-
+        sema.signal()
+        
+        
         let scale = UInt64(frameRate) * 100
         let duration = CMTime(value: CMTimeValue(scale / UInt64(frameRate)), timescale: CMTimeScale(scale))
         let timestamp = CMTime(value: duration.value * CMTimeValue(sequenceNumber), timescale: CMTimeScale(scale))
