@@ -72,12 +72,16 @@ class UVCCamera {
             uvc_free_frame(frame?.bindMemory(to: uvc_frame_t.self, capacity: 1))
         }, bgra, nil, &pb)
         
-        let ciimg = CIImage(cvPixelBuffer: pb!)
-        let noiseRed = CIFilter(name: "CINoiseReduction")
-        noiseRed?.setDefaults()
-        noiseRed?.setValue(ciimg, forKey: kCIInputImageKey)
+
+        autoreleasepool {
+            let ciimg = CIImage(cvPixelBuffer: pb!)
+            let noiseRed = CIFilter(name: "CINoiseReduction")
+            noiseRed?.setDefaults()
+//            noiseRed?.setValue(Double(5), forKey: kCIInputSharpnessKey)
+            noiseRed?.setValue(ciimg, forKey: kCIInputImageKey)
+            cictx.render(noiseRed!.outputImage!, to: canvasBuffer!)
+        }
         
-        cictx.render(noiseRed!.outputImage!, to: canvasBuffer!)
         
         DispatchQueue.main.async {
             self.delegate?.onFrameReady(pixelBuffer: self.canvasBuffer!)
